@@ -13,6 +13,7 @@ namespace utility
     internal static class Program
     {
         public static int time;
+        
 
         [STAThread]
         static void Main()
@@ -30,13 +31,27 @@ namespace utility
             var process = new Process();
 
             time = time * 60;
+
             process.StartInfo.FileName = "shutdown.exe";
             process.StartInfo.Arguments = $"/s /t {time}";
             process.Start();
 
             Console.WriteLine($"Выключаем через {time} минут");
-            //Thread.Sleep(30000);
+            //Thread.Sleep(5000);
             //process.Kill();
+        }
+
+        public static void RestartPc()
+        {
+            var process = new Process();
+
+            time = time * 60;
+
+            process.StartInfo.FileName = "shutdown.exe";
+            process.StartInfo.Arguments = $"/r /t {time}";
+            process.Start();
+
+            Console.WriteLine($"Restart in {time} min.");
         }
         public static void Undo()
         {
@@ -47,6 +62,7 @@ namespace utility
                 process.StartInfo.FileName = "shutdown.exe";
                 process.StartInfo.Arguments = "/a";
                 process.StartInfo.UseShellExecute = false;
+                //process.StartInfo.CreateNoWindow = true;
                 process.Start();
 
                 MessageBox.Show("Undo");
