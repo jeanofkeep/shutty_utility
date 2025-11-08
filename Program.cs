@@ -30,13 +30,15 @@ namespace utility
 
             var process = new Process();
 
-            time = time * 60;
+            int seconds = time * 60; 
 
             process.StartInfo.FileName = "shutdown.exe";
-            process.StartInfo.Arguments = $"/s /t {time}";
+            process.StartInfo.Arguments = $"/s /t {seconds}";
+            process.StartInfo.UseShellExecute = false;
+            process.StartInfo.CreateNoWindow = true;
             process.Start();
 
-            Console.WriteLine($"Выключаем через {time} минут");
+            //Console.WriteLine($"Выключаем через {time} минут");
             //Thread.Sleep(5000);
             //process.Kill();
         }
@@ -45,13 +47,15 @@ namespace utility
         {
             var process = new Process();
 
-            time = time * 60;
+            int seconds = time * 60;
 
             process.StartInfo.FileName = "shutdown.exe";
-            process.StartInfo.Arguments = $"/r /t {time}";
+            process.StartInfo.Arguments = $"/r /t {seconds}";
+            process.StartInfo.UseShellExecute = false;
+            process.StartInfo.CreateNoWindow = true;
             process.Start();
 
-            Console.WriteLine($"Restart in {time} min.");
+            //Console.WriteLine($"Restart in {time} min.");
         }
         public static void Undo()
         {
@@ -62,7 +66,7 @@ namespace utility
                 process.StartInfo.FileName = "shutdown.exe";
                 process.StartInfo.Arguments = "/a";
                 process.StartInfo.UseShellExecute = false;
-                //process.StartInfo.CreateNoWindow = true;
+                process.StartInfo.CreateNoWindow = true;
                 process.Start();
 
                 MessageBox.Show("Undo");
