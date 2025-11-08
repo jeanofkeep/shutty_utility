@@ -21,12 +21,6 @@ namespace utility
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            //this.ActiveControl = this;
-            
-        }
-
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
             Program.time = (int)numericUpDown1.Value;
@@ -55,6 +49,16 @@ namespace utility
             Application.Exit();
         }
 
-        
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form2 info = new Form2();
+            info.Show();
+        }
     }
 }
