@@ -50,7 +50,7 @@ namespace utility
             this.button1.Margin = new System.Windows.Forms.Padding(8);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(56, 50);
-            this.button1.TabIndex = 0;
+            this.button1.TabIndex = 2;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -60,7 +60,7 @@ namespace utility
             this.numericUpDown1.Margin = new System.Windows.Forms.Padding(5);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(353, 20);
-            this.numericUpDown1.TabIndex = 2;
+            this.numericUpDown1.TabIndex = 1;
             this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
             // button2
@@ -72,7 +72,7 @@ namespace utility
             this.button2.Margin = new System.Windows.Forms.Padding(8);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(56, 50);
-            this.button2.TabIndex = 3;
+            this.button2.TabIndex = 4;
             this.button2.Text = "undo";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -86,7 +86,7 @@ namespace utility
             this.button3.Margin = new System.Windows.Forms.Padding(8);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(56, 50);
-            this.button3.TabIndex = 4;
+            this.button3.TabIndex = 3;
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -99,7 +99,7 @@ namespace utility
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(5);
             this.label1.Size = new System.Drawing.Size(240, 32);
-            this.label1.TabIndex = 5;
+            this.label1.TabIndex = 0;
             this.label1.Text = " Enter the time(minutes)";
             // 
             // button4
@@ -125,7 +125,7 @@ namespace utility
             this.button5.Margin = new System.Windows.Forms.Padding(8);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(56, 50);
-            this.button5.TabIndex = 7;
+            this.button5.TabIndex = 5;
             this.button5.Text = "info";
             this.button5.UseVisualStyleBackColor = false;
             // 
@@ -146,6 +146,7 @@ namespace utility
             this.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Name = "Form1";
             this.Text = "SHUTTY UTILITY v1.0 by vadii";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
