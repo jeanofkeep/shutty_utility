@@ -10,27 +10,23 @@ using System.Windows.Forms;
 
 namespace utility
 {
-    public partial class Form2 : Form
+    public partial class Form3 : Form
     {
-        public Form2()
+        public Form3()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form1 main = new Form1();
-            main.Show();
-            
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form3 support = new Form3();
-            support.Show();
+            Form2 info = new Form2();
+            info.Show();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetData(DataFormats.Text, (object)textBox1);
+        }
     }
 }
