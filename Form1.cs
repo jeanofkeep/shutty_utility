@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Drawing2D;
+using static utility.Program;
 
 
 namespace utility
@@ -21,6 +22,12 @@ namespace utility
             InitializeComponent();
         }
 
+        private void UpdateHistory()
+        {
+            listBox1.Items.Clear();
+            listBox1.Items.AddRange(Logger.History.ToArray());
+        }
+
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
             Program.time = (int)numericUpDown1.Value;
@@ -30,7 +37,9 @@ namespace utility
         {
             Program.ShutDownPc();
 
-            MessageBox.Show($"PC shutdown in {Program.time} min!");
+            UpdateHistory();
+
+            //MessageBox.Show($"PC shutdown in {Program.time} min!");
         }
 
         
@@ -38,7 +47,10 @@ namespace utility
         private void button3_Click(object sender, EventArgs e)
         {
             Program.RestartPc();
-            MessageBox.Show($"PC restart in {Program.time} min!");
+
+            UpdateHistory();
+
+            //MessageBox.Show($"PC restart in {Program.time} min!");
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -48,7 +60,7 @@ namespace utility
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -61,7 +73,10 @@ namespace utility
         private void button2_Click(object sender, EventArgs e)
         {
             Program.Undo();
-            MessageBox.Show($"Undo operation!");
+
+            UpdateHistory();
+
+            //MessageBox.Show($"Undo operation!");
         }
     }
 }

@@ -36,6 +36,8 @@ namespace utility
             process.StartInfo.CreateNoWindow = true;
             process.Start();
 
+            Logger.Add($"PC shutdown in {Program.time} min!");
+
             //Console.WriteLine($"Выключаем через {time} минут");
             //Thread.Sleep(5000);
             //process.Kill();
@@ -53,6 +55,8 @@ namespace utility
             process.StartInfo.CreateNoWindow = true;
             process.Start();
 
+            Logger.Add($"PC restart in {Program.time} min!");
+
             //Console.WriteLine($"Restart in {time} min.");
         }
         public static void Undo()
@@ -66,6 +70,8 @@ namespace utility
                 process.StartInfo.UseShellExecute = false;
                 process.StartInfo.CreateNoWindow = true;
                 process.Start();
+
+                Logger.Add("Undo operation!");
             }
 
             catch (Exception ex)
@@ -73,5 +79,8 @@ namespace utility
                 MessageBox.Show("Error undo");
             }
         }
+
+        
+
     }
 }
