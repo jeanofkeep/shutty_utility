@@ -40,7 +40,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Console", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(73, 9);
+            this.label1.Location = new System.Drawing.Point(75, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(229, 19);
             this.label1.TabIndex = 0;
@@ -55,21 +55,21 @@
             this.label2.Margin = new System.Windows.Forms.Padding(1);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(272, 118);
-            this.label2.TabIndex = 0;
+            this.label2.TabIndex = 1;
             this.label2.Text = resources.GetString("label2.Text");
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(81)))), ((int)(((byte)(69)))));
-            this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.Control;
-            this.button2.Location = new System.Drawing.Point(92, 157);
+            this.button2.Location = new System.Drawing.Point(192, 146);
             this.button2.Margin = new System.Windows.Forms.Padding(9);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(121, 50);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "support page";
+            this.button2.Size = new System.Drawing.Size(112, 48);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Donation♡ ︎";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -79,11 +79,11 @@
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(18, 157);
+            this.button1.Location = new System.Drawing.Point(79, 146);
             this.button1.Margin = new System.Windows.Forms.Padding(9);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 50);
-            this.button1.TabIndex = 0;
+            this.button1.Size = new System.Drawing.Size(56, 48);
+            this.button1.TabIndex = 2;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -92,13 +92,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(41)))), ((int)(((byte)(81)))));
-            this.ClientSize = new System.Drawing.Size(384, 214);
+            this.ClientSize = new System.Drawing.Size(386, 201);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SHUTTY UTILITY v1.0 by vadii";
             this.ResumeLayout(false);
             this.PerformLayout();

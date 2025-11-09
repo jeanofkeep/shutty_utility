@@ -26,7 +26,12 @@ namespace utility
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Clipboard.SetData(DataFormats.Text, (object)textBox1);
+            Clipboard.SetText(textBox1.Text);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(textBox2.Text);
         }
     }
 }

@@ -30,6 +30,7 @@ namespace utility
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
@@ -39,6 +40,8 @@ namespace utility
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.SuspendLayout();
@@ -78,7 +81,7 @@ namespace utility
             this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
             this.button5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(237, 81);
+            this.button5.Location = new System.Drawing.Point(238, 81);
             this.button5.Margin = new System.Windows.Forms.Padding(9);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(56, 50);
@@ -92,7 +95,7 @@ namespace utility
             this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
             this.button4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(311, 81);
+            this.button4.Location = new System.Drawing.Point(312, 81);
             this.button4.Margin = new System.Windows.Forms.Padding(9);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(56, 50);
@@ -105,7 +108,7 @@ namespace utility
             this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
             this.button3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(89, 81);
+            this.button3.Location = new System.Drawing.Point(90, 81);
             this.button3.Margin = new System.Windows.Forms.Padding(9);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(56, 50);
@@ -119,7 +122,7 @@ namespace utility
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(163, 81);
+            this.button2.Location = new System.Drawing.Point(164, 81);
             this.button2.Margin = new System.Windows.Forms.Padding(9);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(56, 50);
@@ -131,13 +134,26 @@ namespace utility
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)), true);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(15, 81);
+            this.button1.Location = new System.Drawing.Point(16, 81);
             this.button1.Margin = new System.Windows.Forms.Padding(9);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(56, 50);
             this.button1.TabIndex = 2;
+            this.toolTip1.SetToolTip(this.button1, "Shutdown");
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(120, 144);
+            this.label2.Margin = new System.Windows.Forms.Padding(10);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(127, 13);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "© 2025 by vadii";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
@@ -145,7 +161,8 @@ namespace utility
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(41)))), ((int)(((byte)(81)))));
-            this.ClientSize = new System.Drawing.Size(384, 151);
+            this.ClientSize = new System.Drawing.Size(384, 166);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label1);
@@ -156,6 +173,7 @@ namespace utility
             this.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SHUTTY UTILITY v1.0 by vadii";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
@@ -175,6 +193,8 @@ namespace utility
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.IO.FileSystemWatcher fileSystemWatcher1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 
