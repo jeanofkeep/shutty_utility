@@ -161,14 +161,13 @@ namespace utility
             // 
             this.listBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(16)))), ((int)(((byte)(32)))));
             this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listBox1.Font = new System.Drawing.Font("Lucida Console", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.listBox1.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.listBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(174)))), ((int)(((byte)(92)))));
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 12;
             this.listBox1.Location = new System.Drawing.Point(14, 145);
             this.listBox1.Margin = new System.Windows.Forms.Padding(5);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(353, 132);
+            this.listBox1.Size = new System.Drawing.Size(353, 130);
             this.listBox1.TabIndex = 10;
             // 
             // Form1
