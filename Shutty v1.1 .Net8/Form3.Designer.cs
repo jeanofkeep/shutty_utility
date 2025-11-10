@@ -74,7 +74,7 @@
             this.button2.Margin = new System.Windows.Forms.Padding(9);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(56, 48);
-            this.button2.TabIndex = 6;
+            this.button2.TabIndex = 4;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -121,7 +121,7 @@
             this.button1.Margin = new System.Windows.Forms.Padding(5);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(112, 30);
-            this.button1.TabIndex = 10;
+            this.button1.TabIndex = 2;
             this.button1.Text = "Copy";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -138,7 +138,7 @@
             this.button4.Margin = new System.Windows.Forms.Padding(5);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(112, 30);
-            this.button4.TabIndex = 12;
+            this.button4.TabIndex = 3;
             this.button4.Text = "Copy";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
@@ -151,8 +151,9 @@
             this.richTextBox1.Location = new System.Drawing.Point(12, 184);
             this.richTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.ReadOnly = true;
             this.richTextBox1.Size = new System.Drawing.Size(359, 63);
-            this.richTextBox1.TabIndex = 13;
+            this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "\nGitHub github.com/jeanofkeep\n\nEmail movadim07@gmail.com";
             // 
             // label4
