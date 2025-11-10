@@ -74,7 +74,7 @@
             this.button2.Margin = new System.Windows.Forms.Padding(9);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(56, 48);
-            this.button2.TabIndex = 4;
+            this.button2.TabIndex = 6;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -85,7 +85,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(327, 19);
-            this.textBox1.TabIndex = 7;
+            this.textBox1.TabIndex = 1;
             this.textBox1.Text = "bc1qnucsgcu8pamdplsetx99strq5l94y7dr3t90s930ezctcjakgk4q9dxe2g";
             // 
             // label2
@@ -106,7 +106,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(327, 19);
-            this.textBox2.TabIndex = 9;
+            this.textBox2.TabIndex = 3;
             this.textBox2.Text = "0xd2ecde18e31874abab52b47d655bc4ecd715fabf";
             // 
             // button1
@@ -138,7 +138,7 @@
             this.button4.Margin = new System.Windows.Forms.Padding(5);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(112, 30);
-            this.button4.TabIndex = 3;
+            this.button4.TabIndex = 4;
             this.button4.Text = "Copy";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
@@ -153,7 +153,7 @@
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
             this.richTextBox1.Size = new System.Drawing.Size(359, 63);
-            this.richTextBox1.TabIndex = 1;
+            this.richTextBox1.TabIndex = 5;
             this.richTextBox1.Text = "\nGitHub github.com/jeanofkeep\n\nEmail movadim07@gmail.com";
             // 
             // label4

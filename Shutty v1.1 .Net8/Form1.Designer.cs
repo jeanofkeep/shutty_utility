@@ -52,7 +52,7 @@ namespace utility
             numericUpDown1.Font = new Font("Lucida Console", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
             numericUpDown1.ForeColor = SystemColors.InfoText;
             numericUpDown1.Location = new Point(18, 50);
-            numericUpDown1.Margin = new Padding(10, 10, 10, 10);
+            numericUpDown1.Margin = new Padding(10);
             numericUpDown1.Name = "numericUpDown1";
             numericUpDown1.Size = new Size(412, 20);
             numericUpDown1.TabIndex = 1;
@@ -65,9 +65,9 @@ namespace utility
             label1.Font = new Font("Lucida Console", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
             label1.ForeColor = SystemColors.Control;
             label1.Location = new Point(-4, 7);
-            label1.Margin = new Padding(10, 10, 10, 10);
+            label1.Margin = new Padding(10);
             label1.Name = "label1";
-            label1.Padding = new Padding(6, 6, 6, 6);
+            label1.Padding = new Padding(6);
             label1.Size = new Size(285, 31);
             label1.TabIndex = 0;
             label1.Text = " Enter the time(minutes)";
@@ -84,7 +84,7 @@ namespace utility
             button5.Font = new Font("Arial Rounded MT Bold", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button5.ForeColor = Color.White;
             button5.Location = new Point(278, 93);
-            button5.Margin = new Padding(10, 10, 10, 10);
+            button5.Margin = new Padding(10);
             button5.Name = "button5";
             button5.Size = new Size(65, 58);
             button5.TabIndex = 5;
@@ -98,7 +98,7 @@ namespace utility
             button4.Font = new Font("Arial Rounded MT Bold", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button4.ForeColor = Color.White;
             button4.Location = new Point(364, 93);
-            button4.Margin = new Padding(10, 10, 10, 10);
+            button4.Margin = new Padding(10);
             button4.Name = "button4";
             button4.Size = new Size(65, 58);
             button4.TabIndex = 6;
@@ -111,7 +111,7 @@ namespace utility
             button3.Font = new Font("Arial Rounded MT Bold", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button3.ForeColor = Color.White;
             button3.Location = new Point(105, 93);
-            button3.Margin = new Padding(10, 10, 10, 10);
+            button3.Margin = new Padding(10);
             button3.Name = "button3";
             button3.Size = new Size(65, 58);
             button3.TabIndex = 3;
@@ -125,7 +125,7 @@ namespace utility
             button2.Font = new Font("Arial Rounded MT Bold", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button2.ForeColor = Color.White;
             button2.Location = new Point(191, 93);
-            button2.Margin = new Padding(10, 10, 10, 10);
+            button2.Margin = new Padding(10);
             button2.Name = "button2";
             button2.Size = new Size(65, 58);
             button2.TabIndex = 4;
@@ -138,7 +138,7 @@ namespace utility
             button1.Font = new Font("Arial Rounded MT Bold", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0, true);
             button1.ForeColor = Color.White;
             button1.Location = new Point(19, 93);
-            button1.Margin = new Padding(10, 10, 10, 10);
+            button1.Margin = new Padding(10);
             button1.Name = "button1";
             button1.Size = new Size(56, 50);
             button1.TabIndex = 2;
@@ -150,12 +150,12 @@ namespace utility
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Lucida Console", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label2.Location = new Point(188, 335);
-            label2.Margin = new Padding(9, 9, 9, 9);
+            label2.Location = new Point(76, 330);
+            label2.Margin = new Padding(9);
             label2.Name = "label2";
-            label2.Size = new Size(55, 13);
+            label2.Size = new Size(287, 13);
             label2.TabIndex = 7;
-            label2.Text = "© 2025";
+            label2.Text = "© 2025 Shutty Utility – Open Source";
             label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // listBox1
@@ -167,7 +167,7 @@ namespace utility
             listBox1.FormattingEnabled = true;
             listBox1.ItemHeight = 13;
             listBox1.Location = new Point(16, 167);
-            listBox1.Margin = new Padding(6, 6, 6, 6);
+            listBox1.Margin = new Padding(6);
             listBox1.Name = "listBox1";
             listBox1.Size = new Size(412, 143);
             listBox1.TabIndex = 10;

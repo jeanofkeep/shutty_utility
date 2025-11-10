@@ -154,12 +154,12 @@ namespace utility
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(161, 290);
+            this.label2.Location = new System.Drawing.Point(46, 289);
             this.label2.Margin = new System.Windows.Forms.Padding(8);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 13);
+            this.label2.Size = new System.Drawing.Size(287, 13);
             this.label2.TabIndex = 7;
-            this.label2.Text = "© 2025";
+            this.label2.Text = "© 2025 Shutty Utility – Open Source\r\n";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // listBox1
