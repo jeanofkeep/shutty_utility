@@ -39,28 +39,29 @@
             button1 = new Button();
             button4 = new Button();
             richTextBox1 = new RichTextBox();
-            label4 = new Label();
             toolTip1 = new ToolTip(components);
             SuspendLayout();
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
             label1.Font = new Font("Lucida Console", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
             label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(141, 9);
+            label1.Location = new Point(148, 10);
             label1.Margin = new Padding(1);
             label1.Name = "label1";
             label1.Size = new Size(151, 19);
             label1.TabIndex = 0;
             label1.Text = "Support me ♡ ︎";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Lucida Console", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
             label3.ForeColor = SystemColors.Control;
-            label3.Location = new Point(12, 39);
+            label3.Location = new Point(12, 41);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
             label3.Size = new Size(34, 15);
@@ -73,8 +74,8 @@
             button2.BackgroundImage = shutty_utility.Properties.Resources.back_button;
             button2.Font = new Font("Arial Rounded MT Bold", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button2.ForeColor = SystemColors.Control;
-            button2.Location = new Point(191, 294);
-            button2.Margin = new Padding(10, 10, 10, 10);
+            button2.Location = new Point(191, 295);
+            button2.Margin = new Padding(10);
             button2.Name = "button2";
             button2.Size = new Size(56, 50);
             button2.TabIndex = 4;
@@ -85,12 +86,13 @@
             // textBox1
             // 
             textBox1.Font = new Font("Lucida Console", 9F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox1.Location = new Point(54, 37);
+            textBox1.Location = new Point(54, 39);
             textBox1.Margin = new Padding(4, 3, 4, 3);
             textBox1.Name = "textBox1";
             textBox1.ReadOnly = true;
             textBox1.Size = new Size(381, 19);
             textBox1.TabIndex = 7;
+            textBox1.TabStop = false;
             textBox1.Text = "bc1qnucsgcu8pamdplsetx99strq5l94y7dr3t90s930ezctcjakgk4q9dxe2g";
             // 
             // label2
@@ -98,7 +100,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Lucida Console", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
             label2.ForeColor = SystemColors.Control;
-            label2.Location = new Point(10, 117);
+            label2.Location = new Point(10, 119);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new Size(34, 15);
@@ -108,12 +110,13 @@
             // textBox2
             // 
             textBox2.Font = new Font("Lucida Console", 9F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox2.Location = new Point(54, 113);
+            textBox2.Location = new Point(54, 115);
             textBox2.Margin = new Padding(4, 3, 4, 3);
             textBox2.Name = "textBox2";
             textBox2.ReadOnly = true;
             textBox2.Size = new Size(381, 19);
             textBox2.TabIndex = 9;
+            textBox2.TabStop = false;
             textBox2.Text = "0xd2ecde18e31874abab52b47d655bc4ecd715fabf";
             // 
             // button1
@@ -124,8 +127,8 @@
             button1.FlatAppearance.BorderSize = 0;
             button1.Font = new Font("Lucida Console", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
             button1.ForeColor = SystemColors.Control;
-            button1.Location = new Point(158, 68);
-            button1.Margin = new Padding(6, 6, 6, 6);
+            button1.Location = new Point(158, 70);
+            button1.Margin = new Padding(6);
             button1.Name = "button1";
             button1.Size = new Size(131, 35);
             button1.TabIndex = 2;
@@ -142,8 +145,8 @@
             button4.FlatAppearance.BorderSize = 0;
             button4.Font = new Font("Lucida Console", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
             button4.ForeColor = SystemColors.Control;
-            button4.Location = new Point(158, 144);
-            button4.Margin = new Padding(6, 6, 6, 6);
+            button4.Location = new Point(158, 146);
+            button4.Margin = new Padding(6);
             button4.Name = "button4";
             button4.Size = new Size(131, 35);
             button4.TabIndex = 3;
@@ -157,25 +160,13 @@
             richTextBox1.BackColor = Color.FromArgb(12, 16, 32);
             richTextBox1.Font = new Font("Lucida Console", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
             richTextBox1.ForeColor = Color.FromArgb(62, 174, 92);
-            richTextBox1.Location = new Point(14, 212);
-            richTextBox1.Margin = new Padding(5, 5, 5, 5);
+            richTextBox1.Location = new Point(14, 192);
+            richTextBox1.Margin = new Padding(5);
             richTextBox1.Name = "richTextBox1";
             richTextBox1.ReadOnly = true;
-            richTextBox1.Size = new Size(418, 72);
+            richTextBox1.Size = new Size(418, 92);
             richTextBox1.TabIndex = 1;
-            richTextBox1.Text = "\nGitHub github.com/jeanofkeep\n\nEmail movadim07@gmail.com";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Lucida Console", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label4.ForeColor = SystemColors.Control;
-            label4.Location = new Point(163, 187);
-            label4.Margin = new Padding(4, 3, 4, 3);
-            label4.Name = "label4";
-            label4.Size = new Size(97, 19);
-            label4.TabIndex = 14;
-            label4.Text = "Contacts";
+            richTextBox1.Text = "My contacts\n\nGitHub github.com/jeanofkeep\n\nEmail movadim07@gmail.com";
             // 
             // Form3
             // 
@@ -184,7 +175,6 @@
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.FromArgb(29, 41, 81);
             ClientSize = new Size(448, 359);
-            Controls.Add(label4);
             Controls.Add(richTextBox1);
             Controls.Add(button4);
             Controls.Add(button1);
@@ -215,7 +205,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Label label4;
         private ToolTip toolTip1;
     }
 }

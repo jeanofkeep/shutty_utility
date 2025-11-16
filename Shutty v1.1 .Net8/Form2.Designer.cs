@@ -68,10 +68,10 @@
             button2.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button2.ForeColor = SystemColors.Control;
             button2.Location = new Point(286, 283);
-            button2.Margin = new Padding(10, 10, 10, 10);
+            button2.Margin = new Padding(10);
             button2.Name = "button2";
-            button2.Size = new Size(131, 55);
-            button2.TabIndex = 3;
+            button2.Size = new Size(131, 50);
+            button2.TabIndex = 1;
             button2.Text = "Donation♡ ︎";
             toolTip1.SetToolTip(button2, "Donation");
             button2.UseVisualStyleBackColor = false;
@@ -84,9 +84,9 @@
             button1.ForeColor = SystemColors.Control;
             button1.Image = shutty_utility.Properties.Resources.back_button;
             button1.Location = new Point(42, 283);
-            button1.Margin = new Padding(10, 10, 10, 10);
+            button1.Margin = new Padding(10);
             button1.Name = "button1";
-            button1.Size = new Size(65, 55);
+            button1.Size = new Size(56, 50);
             button1.TabIndex = 2;
             toolTip1.SetToolTip(button1, "Back");
             button1.UseVisualStyleBackColor = false;

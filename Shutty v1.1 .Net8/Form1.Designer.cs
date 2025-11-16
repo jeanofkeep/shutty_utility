@@ -56,7 +56,7 @@ namespace utility
             numericUpDown1.Name = "numericUpDown1";
             numericUpDown1.Size = new Size(412, 20);
             numericUpDown1.TabIndex = 1;
-            numericUpDown1.Value = new decimal(new int[] { 1, 0, 0, 0 });
+            numericUpDown1.Value = new decimal(new int[] { 5, 0, 0, 0 });
             numericUpDown1.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // label1
@@ -175,7 +175,8 @@ namespace utility
             listBox1.Margin = new Padding(6);
             listBox1.Name = "listBox1";
             listBox1.Size = new Size(412, 143);
-            listBox1.TabIndex = 10;
+            listBox1.TabIndex = 0;
+            listBox1.TabStop = false;
             // 
             // Form1
             // 
