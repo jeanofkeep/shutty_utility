@@ -38,8 +38,6 @@ namespace utility
             Program.ShutDownPc();
 
             UpdateHistory();
-
-            //MessageBox.Show($"PC shutdown in {Program.time} min!");
         }
 
 
@@ -49,8 +47,6 @@ namespace utility
             Program.RestartPc();
 
             UpdateHistory();
-
-            //MessageBox.Show($"PC restart in {Program.time} min!");
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -67,7 +63,7 @@ namespace utility
         {
             this.Hide();
             Form2 info = new Form2();
-            info.Show();
+            info.ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -75,8 +71,6 @@ namespace utility
             Program.Undo();
 
             UpdateHistory();
-
-            //MessageBox.Show($"Undo operation!");
         }
     }
 }

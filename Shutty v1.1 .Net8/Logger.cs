@@ -16,9 +16,5 @@ namespace utility
             History.Add($"[{timestamp}] {message}");
         }
 
-        public static void Clear()
-        {
-            History.Clear();
-        }
     }
 }

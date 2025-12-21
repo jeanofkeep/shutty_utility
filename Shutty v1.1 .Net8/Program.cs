@@ -7,7 +7,6 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-//using utility.Logger;
 
 namespace utility
 {
@@ -38,10 +37,6 @@ namespace utility
             process.Start();
 
             Logger.Add($"PC shutdown in {Program.time} min!");
-
-            //Console.WriteLine($"Выключаем через {time} минут");
-            //Thread.Sleep(5000);
-            //process.Kill();
         }
 
         public static void RestartPc()
@@ -63,13 +58,13 @@ namespace utility
         {
             try
             {
-                Process[] running = Process.GetProcessesByName("shutdown.exe");
-                if(running.Length == 0)
-                {
-                    Logger.Add("No operation to undo");
-                }
-                else
-                {
+                //Process[] running = Process.GetProcessesByName("shutdown.exe");
+                //if(running.Length == 0)
+                //{
+                 //   Logger.Add("No operation to undo");
+                //}
+                //else
+                //{
                     var process = new Process();
 
                     process.StartInfo.FileName = "shutdown.exe";
@@ -77,10 +72,15 @@ namespace utility
                     process.StartInfo.UseShellExecute = false;
                     process.StartInfo.CreateNoWindow = true;
                     process.Start();
+                    process.WaitForExit();
+
+                if (process.ExitCode == 0)
 
                     Logger.Add("Undo operation!");
-                }
-                
+                else
+                    Logger.Add("No operation to undo");
+                // }
+
             }
 
             catch (Exception ex)
@@ -88,8 +88,5 @@ namespace utility
                 MessageBox.Show("Error undo");
             }
         }
-
-        
-
     }
 }

@@ -22,15 +22,14 @@ namespace utility
             this.Hide();
             Form1 main = new Form1();
             main.Show();
-            
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
             Form3 support = new Form3();
-            support.Show();
+            support.ShowDialog();
         }
-
     }
 }

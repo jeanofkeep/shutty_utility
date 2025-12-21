@@ -15,15 +15,13 @@ namespace utility
         public Form3()
         {
             InitializeComponent();
-            //label1.Left = (this.ClientSize.Width - label1.Width) / 2;
-            //label1.Top = (this.ClientSize.Height - label1.Height) / 2;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
             Form2 info = new Form2();
-            info.Show();
+            info.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)
