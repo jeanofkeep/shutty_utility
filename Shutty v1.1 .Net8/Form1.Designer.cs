@@ -53,10 +53,12 @@ namespace utility
             numericUpDown1.ForeColor = SystemColors.InfoText;
             numericUpDown1.Location = new Point(18, 50);
             numericUpDown1.Margin = new Padding(10);
+            numericUpDown1.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
+            numericUpDown1.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             numericUpDown1.Name = "numericUpDown1";
             numericUpDown1.Size = new Size(412, 20);
             numericUpDown1.TabIndex = 1;
-            numericUpDown1.Value = new decimal(new int[] { 5, 0, 0, 0 });
+            numericUpDown1.Value = new decimal(new int[] { 2, 0, 0, 0 });
             numericUpDown1.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // label1

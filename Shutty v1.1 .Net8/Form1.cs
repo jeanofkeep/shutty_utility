@@ -20,6 +20,7 @@ namespace utility
         public Form1()
         {
             InitializeComponent();
+            numericUpDown1.Value = 5;
         }
 
         private void UpdateHistory()
@@ -30,6 +31,7 @@ namespace utility
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
+            
             Program.time = (int)numericUpDown1.Value;
         }
 

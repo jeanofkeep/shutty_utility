@@ -58,13 +58,7 @@ namespace utility
         {
             try
             {
-                //Process[] running = Process.GetProcessesByName("shutdown.exe");
-                //if(running.Length == 0)
-                //{
-                 //   Logger.Add("No operation to undo");
-                //}
-                //else
-                //{
+            
                     var process = new Process();
 
                     process.StartInfo.FileName = "shutdown.exe";
@@ -79,7 +73,6 @@ namespace utility
                     Logger.Add("Undo operation!");
                 else
                     Logger.Add("No operation to undo");
-                // }
 
             }
 
