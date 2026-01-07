@@ -6,7 +6,14 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>main_iconn.ico</ApplicationIcon>
+    <NoWin32Manifest>true</NoWin32Manifest>
+	
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="main_iconn.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">

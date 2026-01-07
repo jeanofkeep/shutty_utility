@@ -58,7 +58,7 @@ namespace utility
             numericUpDown1.Name = "numericUpDown1";
             numericUpDown1.Size = new Size(412, 20);
             numericUpDown1.TabIndex = 1;
-            numericUpDown1.Value = new decimal(new int[] { 2, 0, 0, 0 });
+            numericUpDown1.Value = new decimal(new int[] { 6, 0, 0, 0 });
             numericUpDown1.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // label1
@@ -162,7 +162,7 @@ namespace utility
             label2.Name = "label2";
             label2.Size = new Size(287, 13);
             label2.TabIndex = 7;
-            label2.Text = "© 2025 Shutty Utility – Open Source";
+            label2.Text = "© 2026 Shutty Utility – Open Source";
             label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // listBox1
@@ -201,7 +201,7 @@ namespace utility
             Margin = new Padding(4, 3, 4, 3);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "SHUTTY UTILITY v1.0 by vadii";
+            Text = "SHUTTY UTILITY v1.2.0 by vadii";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             ((System.ComponentModel.ISupportInitialize)fileSystemWatcher1).EndInit();

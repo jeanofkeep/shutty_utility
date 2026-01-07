@@ -107,7 +107,7 @@
             Margin = new Padding(4, 3, 4, 3);
             Name = "Form2";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "SHUTTY UTILITY v1.0 by vadii";
+            Text = "SHUTTY UTILITY v1.2.0 by vadii";
             ResumeLayout(false);
             PerformLayout();
 
