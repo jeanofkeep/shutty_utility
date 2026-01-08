@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading;
 using System.Threading.Tasks;
@@ -14,14 +15,52 @@ namespace utility
     {
         public static int time;
         
+            
+        private const string MutexName = "ShuttyUtility_SingleInstance_Mutex";
+
+            [DllImport("user32.dll")]
+            private static extern bool SetForegroundWindow(IntPtr hWnd);
+
+            [DllImport("user32.dll")]
+            private static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
+
+            private const int SW_RESTORE = 9;
 
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            bool createdNew;
+
+            using (Mutex mutex = new Mutex(true, MutexName, out createdNew))
+            {
+                if (!createdNew)
+                {
+                    ActivateExistingInstance();
+                    return;
+                }
+
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                Application.Run(new Form1());
+            }
         }
+
+        private static void ActivateExistingInstance()
+        {
+            string currentProcessName = Process.GetCurrentProcess().ProcessName;
+
+            foreach (Process process in Process.GetProcessesByName(currentProcessName))
+            {
+                if (process.Id != Process.GetCurrentProcess().Id &&
+                    process.MainWindowHandle != IntPtr.Zero)
+                {
+                    ShowWindow(process.MainWindowHandle, SW_RESTORE);
+                    SetForegroundWindow(process.MainWindowHandle);
+                    break;
+                }
+            }
+        }
+            
 
         public static void ShutDownPc()
         {
@@ -81,5 +120,6 @@ namespace utility
                 MessageBox.Show("Error undo");
             }
         }
+
     }
 }
