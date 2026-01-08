@@ -197,8 +197,10 @@ namespace utility
             Controls.Add(numericUpDown1);
             Controls.Add(button1);
             ForeColor = SystemColors.ButtonFace;
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4, 3, 4, 3);
+            MaximizeBox = false;
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "SHUTTY UTILITY v1.2.0 by vadii";
