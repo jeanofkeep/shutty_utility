@@ -14,17 +14,17 @@ namespace utility
     internal static class Program
     {
         public static int time;
-        
-            
+
+
         private const string MutexName = "ShuttyUtility_SingleInstance_Mutex";
 
-            [DllImport("user32.dll")]
-            private static extern bool SetForegroundWindow(IntPtr hWnd);
+        [DllImport("user32.dll")]
+        private static extern bool SetForegroundWindow(IntPtr hWnd);
 
-            [DllImport("user32.dll")]
-            private static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
+        [DllImport("user32.dll")]
+        private static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
 
-            private const int SW_RESTORE = 9;
+        private const int SW_RESTORE = 9;
 
         [STAThread]
         static void Main()
@@ -60,14 +60,14 @@ namespace utility
                 }
             }
         }
-            
+
 
         public static void ShutDownPc()
         {
 
             var process = new Process();
 
-            int seconds = time * 60; 
+            int seconds = time * 60;
 
             process.StartInfo.FileName = "shutdown.exe";
             process.StartInfo.Arguments = $"/s /t {seconds}";
@@ -97,15 +97,14 @@ namespace utility
         {
             try
             {
-            
-                    var process = new Process();
+                var process = new Process();
 
-                    process.StartInfo.FileName = "shutdown.exe";
-                    process.StartInfo.Arguments = "/a";
-                    process.StartInfo.UseShellExecute = false;
-                    process.StartInfo.CreateNoWindow = true;
-                    process.Start();
-                    process.WaitForExit();
+                process.StartInfo.FileName = "shutdown.exe";
+                process.StartInfo.Arguments = "/a";
+                process.StartInfo.UseShellExecute = false;
+                process.StartInfo.CreateNoWindow = true;
+                process.Start();
+                process.WaitForExit();
 
                 if (process.ExitCode == 0)
 
@@ -120,6 +119,7 @@ namespace utility
                 MessageBox.Show("Error undo");
             }
         }
+
 
     }
 }

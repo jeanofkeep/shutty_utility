@@ -43,6 +43,8 @@ namespace utility
             label2 = new Label();
             toolTip1 = new ToolTip(components);
             listBox1 = new ListBox();
+            label3 = new Label();
+            timer2 = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)fileSystemWatcher1).BeginInit();
             SuspendLayout();
@@ -180,13 +182,28 @@ namespace utility
             listBox1.TabIndex = 0;
             listBox1.TabStop = false;
             // 
+            // label3
+            // 
+            label3.BackColor = Color.Sienna;
+            label3.Location = new Point(26, 357);
+            label3.Name = "label3";
+            label3.Size = new Size(100, 23);
+            label3.TabIndex = 8;
+            label3.Text = "label3";
+            label3.Click += label3_Click;
+            // 
+            // timer2
+            // 
+            //timer2.Tick += timer2_Tick;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.FromArgb(29, 41, 81);
-            ClientSize = new Size(448, 359);
+            ClientSize = new Size(449, 420);
+            Controls.Add(label3);
             Controls.Add(listBox1);
             Controls.Add(label2);
             Controls.Add(button5);
@@ -225,6 +242,9 @@ namespace utility
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.ListBox listBox1;
+        private Label label3;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer2;
     }
 }
 
