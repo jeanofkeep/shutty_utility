@@ -68,8 +68,7 @@ namespace utility
 
         int timer = 0;
 
-        private int timer_test;
-
+        //int test_X = 60 * 2;
         int test_X = 1;
 
         public Form1()
@@ -86,16 +85,6 @@ namespace utility
             timer2.Interval = 1000;
 
             timer2.Tick += timer2_Tick;
-
-            //timer2.Enabled = true;
-
-            //timer2.Start();
-
-            //timer2 = new System.Windows.Forms.Timer();
-
-
-
-            //timer2.Tick += new EventHandler(timer2_Tick);
         }
 
         
@@ -106,11 +95,17 @@ namespace utility
             listBox1.Items.AddRange(Logger.History.ToArray());
         }
 
+        public void timer_reset(object? sender, EventArgs e)
+        {
+            timer2.Stop();
+            test_X = Program.time * 60;
+        }
+
         public void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
 
             Program.time = (int)numericUpDown1.Value;
-            //timer = (int)numericUpDown1.Value;
+            
             test_X = Program.time * 60;
 
         }
@@ -124,10 +119,6 @@ namespace utility
 
             UpdateHistory();
 
-            //timer = Program.time * 60;
-
-            //timer = 5 * 60;
-
             timer2.Start();
             //MessageBox.Show("Start");
         }
@@ -139,6 +130,8 @@ namespace utility
             Program.RestartPc();
 
             UpdateHistory();
+
+            timer2.Start();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -162,28 +155,28 @@ namespace utility
         {
             Program.Undo();
 
+            
+
             UpdateHistory();
+            //timer_reset();
+
+            timer2.Stop();
+            test_X = Program.time * 60;
+            //label3.Text = "00:00";
+            //timer2.Enabled = false;
         }
 
         //###################################################
+
+        //Logicl timer
+        
         public void timer2_Tick(object? sender, EventArgs e)
-        {
-            // нужно подставить значение вместо X 
-            //timer = timer 
-            //int time_local = 0;
-
-            //time_local =  2;
-
+        { 
+            
             label3.Text = TimeSpan.FromSeconds(test_X).ToString(@"mm\:ss"); // формат mm:ss
 
             //int minutes = timer / 60;
             //int seconds = timer % 60;
-
-            
-
-            //int test = timer * 60;
-            //int test = timer;
-            //string str = Int32Converter(test);
 
             //MessageBox.Show(test);
             //label3.Text = $"off in {test_X}";
@@ -199,10 +192,6 @@ namespace utility
             {
                 test_X--;
             }
-
-
-
-
         }
 
         private void UpdateTimer()
