@@ -57,13 +57,20 @@ namespace utility
 {
     public partial class Form1 : Form
     {
-        //int timer = 0;
+        
 
         //private Timer timer2;
 
         //timer2 = new System.Windows.Forms.Timer();
 
-        int timer = 1 * 60;
+        //int timer = Program.time * 60;
+        //int timer = 60 * 2;
+
+        int timer = 0;
+
+        private int timer_test;
+
+        int test_X = 1;
 
         public Form1()
         {
@@ -99,10 +106,13 @@ namespace utility
             listBox1.Items.AddRange(Logger.History.ToArray());
         }
 
-        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        public void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
 
             Program.time = (int)numericUpDown1.Value;
+            //timer = (int)numericUpDown1.Value;
+            test_X = Program.time * 60;
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -117,13 +127,6 @@ namespace utility
             //timer = Program.time * 60;
 
             //timer = 5 * 60;
-
-            //int minutes = timer / 60;
-            //int seconds = timer % 60;
-
-            //label3.Text = timer.ToString($"off in {minutes}:{seconds}");
-
-            //label3.Text = $"off in:{timer}";
 
             timer2.Start();
             //MessageBox.Show("Start");
@@ -162,24 +165,31 @@ namespace utility
             UpdateHistory();
         }
 
-        private void timer2_Tick(object? sender, EventArgs e)
+        //###################################################
+        public void timer2_Tick(object? sender, EventArgs e)
         {
-            
+            // нужно подставить значение вместо X 
+            //timer = timer 
+            //int time_local = 0;
 
-            //int timer = Program.time * 60;
+            //time_local =  2;
 
-            
-
-            //TimeSpan time = TimeSpan.FromSeconds(timer);
-            label3.Text = TimeSpan.FromSeconds(timer).ToString(@"mm\:ss"); // формат mm:ss
+            label3.Text = TimeSpan.FromSeconds(test_X).ToString(@"mm\:ss"); // формат mm:ss
 
             //int minutes = timer / 60;
             //int seconds = timer % 60;
 
-            //label3.Text = $"off in {minutes:D2}:{seconds:D2}";
+            
+
+            //int test = timer * 60;
+            //int test = timer;
+            //string str = Int32Converter(test);
+
+            //MessageBox.Show(test);
+            //label3.Text = $"off in {test_X}";
 
 
-            if (timer == 0)
+            if (test_X == 0)
             {
                 timer2.Stop();
                 label3.Text = "Готово!";
@@ -187,7 +197,7 @@ namespace utility
 
             else
             {
-                timer--;
+                test_X--;
             }
 
 

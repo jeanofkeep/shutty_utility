@@ -93,6 +93,8 @@ namespace utility
             Logger.Add($"PC restart in {Program.time} min!");
 
         }
+        
+
         public static void Undo()
         {
             try
