@@ -159,7 +159,7 @@ namespace utility
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Lucida Console", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label2.Location = new Point(76, 330);
+            label2.Location = new Point(78, 354);
             label2.Margin = new Padding(9);
             label2.Name = "label2";
             label2.Size = new Size(287, 13);
@@ -184,17 +184,15 @@ namespace utility
             // 
             // label3
             // 
-            label3.BackColor = Color.Sienna;
-            label3.Location = new Point(26, 357);
+            label3.BackColor = Color.FromArgb(12, 16, 32);
+            label3.Font = new Font("Lucida Console", 9F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            label3.ForeColor = Color.FromArgb(62, 174, 92);
+            label3.Location = new Point(16, 316);
             label3.Name = "label3";
-            label3.Size = new Size(100, 23);
+            label3.Size = new Size(414, 23);
             label3.TabIndex = 8;
-            label3.Text = "label3";
+            label3.TextAlign = ContentAlignment.MiddleLeft;
             label3.Click += label3_Click;
-            // 
-            // timer2
-            // 
-            //timer2.Tick += timer2_Tick;
             // 
             // Form1
             // 
@@ -202,7 +200,7 @@ namespace utility
             AutoScaleMode = AutoScaleMode.Font;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.FromArgb(29, 41, 81);
-            ClientSize = new Size(449, 420);
+            ClientSize = new Size(449, 381);
             Controls.Add(label3);
             Controls.Add(listBox1);
             Controls.Add(label2);

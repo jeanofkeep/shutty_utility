@@ -1,5 +1,4 @@
-﻿using static utility.Program;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,84 +9,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
-/*
- * public partial class Form1 : Form
-    {
-        int seconds = 4; // сколько секунд считать
-
-        public Form1()
-        {
-            InitializeComponent();
-            lblTimer.Text = seconds.ToString();
-
-            timer1.Tick += timer1_Tick;
-        }
-
-        private void btnStart_Click(object sender, EventArgs e)
-        {
-            seconds = 4; // сброс таймера
-            lblTimer.Text = seconds.ToString();
-            timer1.Start();
-            MessageBox.Show("Start");
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            seconds--;
-
-            lblTimer.Text = seconds.ToString();
-
-            //MessageBox.Show("tick");
-
-            
-
-
-            if (seconds <= 0)
-            {
-                timer1.Stop();
-                
-                lblTimer.Text = "Готово!";
-            }
-        }
-
- */
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static utility.Program;
 
 namespace utility
 {
     public partial class Form1 : Form
     {
-        
-
-        //private Timer timer2;
-
-        //timer2 = new System.Windows.Forms.Timer();
-
-        //int timer = Program.time * 60;
         //int timer = 60 * 2;
 
-        int timer = 0;
-
-        //int test_X = 60 * 2;
-        int test_X = 1;
-
+        int remining;
+        int timer = 1;
+        string time_print;
         public Form1()
         {
             InitializeComponent();
             numericUpDown1.Value = 5;
-            //int timer = 0;
-            //shutdownTimer.Interval = 1000;
-            
-            label3.Text = TimeSpan.FromSeconds(timer).ToString(@"mm\:ss");
-
-            
 
             timer2.Interval = 1000;
 
             timer2.Tick += timer2_Tick;
         }
-
-        
 
         private void UpdateHistory()
         {
@@ -95,35 +37,32 @@ namespace utility
             listBox1.Items.AddRange(Logger.History.ToArray());
         }
 
-        public void timer_reset(object? sender, EventArgs e)
+        public void TimerReset()
         {
             timer2.Stop();
-            test_X = Program.time * 60;
+            timer = Program.time * 60;
         }
 
         public void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
-
             Program.time = (int)numericUpDown1.Value;
             
-            test_X = Program.time * 60;
-
+            timer = Program.time * 60;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-            //label3.Text = TimeSpan.FromSeconds(timer).ToString(@"mm\:ss");
-
             Program.ShutDownPc();
 
             UpdateHistory();
 
+            //totalValue = 10;
+            remining = timer;
+
             timer2.Start();
             //MessageBox.Show("Start");
+
         }
-
-
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -155,34 +94,21 @@ namespace utility
         {
             Program.Undo();
 
-            
-
             UpdateHistory();
-            //timer_reset();
 
-            timer2.Stop();
-            test_X = Program.time * 60;
-            //label3.Text = "00:00";
-            //timer2.Enabled = false;
+            TimerReset();
         }
 
         //###################################################
 
         //Logicl timer
         
-        public void timer2_Tick(object? sender, EventArgs e)
+        public void timer22_Tick(object? sender, EventArgs e)
         { 
             
-            label3.Text = TimeSpan.FromSeconds(test_X).ToString(@"mm\:ss"); // формат mm:ss
-
-            //int minutes = timer / 60;
-            //int seconds = timer % 60;
-
-            //MessageBox.Show(test);
-            //label3.Text = $"off in {test_X}";
-
-
-            if (test_X == 0)
+            label3.Text = TimeSpan.FromSeconds(timer).ToString(@"mm\:ss");
+            
+            if (timer == 0)
             {
                 timer2.Stop();
                 label3.Text = "Готово!";
@@ -190,15 +116,59 @@ namespace utility
 
             else
             {
-                test_X--;
+                timer--;
             }
         }
 
-        private void UpdateTimer()
+        private void timer2_Tick(object sender, EventArgs e)
         {
+            if (remining > 0)
+            {
+                int elapsed = timer - remining;
+                string time_print = TimeSpan.FromSeconds(remining).ToString(@"mm\:ss");
 
+                //label3.Text = CreateProgressBar(elapsed, timer);
+                label3.Text = time_print + "|" +CreateProgressBar(elapsed, timer);
+                remining--;
+            }
+
+            else
+            {
+                timer1.Stop();
+                //percents = 100;
+                //lblTimer.Text = "[█████████████████████████] Готово!";
+            }
 
         }
+
+        private string CreateProgressBar(int cur, int total)
+        {
+
+            const int width = 50;
+
+
+            int filled = (cur * width) / total;
+
+            StringBuilder bar = new StringBuilder("[");
+
+            for (int i = 0; i < width; i++)
+            {
+                bar.Append(i < filled ? "█" : "░");
+
+            }
+            bar.Append("]");
+            //bar.Append(i < filled ? "█" : "░");
+            //bar.Append("░");
+            //bar.Append("█");
+            //bar.Append("▌ ");
+
+
+            return bar.ToString();
+
+        }
+
+
+
 
         private void label3_Click(object sender, EventArgs e)
         {
