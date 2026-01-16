@@ -187,12 +187,11 @@ namespace utility
             label3.BackColor = Color.FromArgb(12, 16, 32);
             label3.Font = new Font("Lucida Console", 9F, FontStyle.Regular, GraphicsUnit.Point, 204);
             label3.ForeColor = Color.FromArgb(62, 174, 92);
-            label3.Location = new Point(16, 316);
+            label3.Location = new Point(16, 310);
             label3.Name = "label3";
-            label3.Size = new Size(414, 23);
+            label3.Size = new Size(412, 23);
             label3.TabIndex = 8;
             label3.TextAlign = ContentAlignment.MiddleLeft;
-            label3.Click += label3_Click;
             // 
             // Form1
             // 
@@ -218,7 +217,7 @@ namespace utility
             MaximizeBox = false;
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "SHUTTY UTILITY v1.2.0 by vadii";
+            Text = "SHUTTY UTILITY v1.2.5 by vadii";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             ((System.ComponentModel.ISupportInitialize)fileSystemWatcher1).EndInit();

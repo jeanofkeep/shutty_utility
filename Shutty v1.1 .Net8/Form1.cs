@@ -16,11 +16,10 @@ namespace utility
 {
     public partial class Form1 : Form
     {
-        //int timer = 60 * 2;
+        int elapsed, remining;
 
-        int remining;
         int timer = 1;
-        string time_print;
+        
         public Form1()
         {
             InitializeComponent();
@@ -37,6 +36,7 @@ namespace utility
             listBox1.Items.AddRange(Logger.History.ToArray());
         }
 
+        //reset timer
         public void TimerReset()
         {
             timer2.Stop();
@@ -50,13 +50,13 @@ namespace utility
             timer = Program.time * 60;
         }
 
+        //shutdown button
         private void button1_Click(object sender, EventArgs e)
         {
             Program.ShutDownPc();
 
             UpdateHistory();
 
-            //totalValue = 10;
             remining = timer;
 
             timer2.Start();
@@ -64,6 +64,7 @@ namespace utility
 
         }
 
+        //restart button
         private void button3_Click(object sender, EventArgs e)
         {
             Program.RestartPc();
@@ -73,6 +74,7 @@ namespace utility
             timer2.Start();
         }
 
+        //exit application button
         private void button4_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -83,6 +85,7 @@ namespace utility
 
         }
 
+        //form2
         private void button5_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -90,6 +93,7 @@ namespace utility
             info.ShowDialog();
         }
 
+        //undo button
         private void button2_Click(object sender, EventArgs e)
         {
             Program.Undo();
@@ -100,58 +104,37 @@ namespace utility
 
         }
 
-        //###################################################
-
-        //Logicl timer
-        
-        public void timer22_Tick(object? sender, EventArgs e)
-        { 
-            
-            label3.Text = TimeSpan.FromSeconds(timer).ToString(@"mm\:ss");
-            
-            if (timer == 0)
-            {
-                timer2.Stop();
-                label3.Text = "Готово!";
-            }
-
-            else
-            {
-                timer--;
-            }
-        }
-
+        //logic timer2
         private void timer2_Tick(object sender, EventArgs e)
         {
             if (remining > 0)
             {
-                int elapsed = timer - remining;
+                elapsed = timer - remining;
                 string time_print = TimeSpan.FromSeconds(remining).ToString(@"mm\:ss");
+                int percent = (elapsed * 100) / timer;
+                //string percent_bar = PercentBar(percent);
 
-                //label3.Text = CreateProgressBar(elapsed, timer);
-                label3.Text = time_print + "|" +CreateProgressBar(elapsed, timer);
+                label3.Text = time_print + "|" + CreateProgressBar(elapsed, timer);
                 remining--;
             }
 
             else
             {
                 timer1.Stop();
-                //percents = 100;
-                //lblTimer.Text = "[█████████████████████████] Готово!";
+                //percent = 100;
             }
 
         }
 
+        //progress bar
         private string CreateProgressBar(int cur, int total)
         {
-
             const int width = 50;
-
 
             int filled = (cur * width) / total;
 
             StringBuilder bar = new StringBuilder("[");
-
+            
             for (int i = 0; i < width; i++)
             {
                 bar.Append(i < filled ? "█" : "░");
@@ -161,18 +144,9 @@ namespace utility
             //bar.Append(i < filled ? "█" : "░");
             //bar.Append("░");
             //bar.Append("█");
-            //bar.Append("▌ ");
-
-
+            //bar.Append("▌");
+           
             return bar.ToString();
-
-        }
-
-
-
-
-        private void label3_Click(object sender, EventArgs e)
-        {
 
         }
     }
