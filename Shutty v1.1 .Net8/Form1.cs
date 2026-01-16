@@ -69,7 +69,7 @@ namespace utility
             Program.RestartPc();
 
             UpdateHistory();
-
+            remining = timer;
             timer2.Start();
         }
 
@@ -97,6 +97,7 @@ namespace utility
             UpdateHistory();
 
             TimerReset();
+
         }
 
         //###################################################
