@@ -48,7 +48,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Lucida Console", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
             label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(148, 10);
+            label1.Location = new Point(150, 9);
             label1.Margin = new Padding(1);
             label1.Name = "label1";
             label1.Size = new Size(151, 19);
@@ -174,7 +174,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.FromArgb(29, 41, 81);
-            ClientSize = new Size(448, 359);
+            ClientSize = new Size(449, 356);
             Controls.Add(richTextBox1);
             Controls.Add(button4);
             Controls.Add(button1);
@@ -190,7 +190,7 @@
             MaximizeBox = false;
             Name = "Form3";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "SHUTTY UTILITY v1.2.0 by vadii";
+            Text = "Shutty Utility v1.2.5 by vadii";
             ResumeLayout(false);
             PerformLayout();
 

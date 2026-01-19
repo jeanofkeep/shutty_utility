@@ -80,11 +80,6 @@ namespace utility
             Application.Exit();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         //form2
         private void button5_Click(object sender, EventArgs e)
         {
@@ -120,7 +115,7 @@ namespace utility
 
             else
             {
-                timer1.Stop();
+                timer2.Stop();
                 //percent = 100;
             }
 

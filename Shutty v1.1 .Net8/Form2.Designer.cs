@@ -42,7 +42,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Lucida Console", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
             label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(88, 10);
+            label1.Location = new Point(95, 10);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(229, 19);
@@ -67,7 +67,7 @@
             button2.BackColor = Color.FromArgb(29, 81, 69);
             button2.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button2.ForeColor = SystemColors.Control;
-            button2.Location = new Point(286, 283);
+            button2.Location = new Point(286, 274);
             button2.Margin = new Padding(10);
             button2.Name = "button2";
             button2.Size = new Size(131, 50);
@@ -83,7 +83,7 @@
             button1.Font = new Font("Arial Rounded MT Bold", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button1.ForeColor = SystemColors.Control;
             button1.Image = shutty_utility.Properties.Resources.back_button;
-            button1.Location = new Point(42, 283);
+            button1.Location = new Point(42, 274);
             button1.Margin = new Padding(10);
             button1.Name = "button1";
             button1.Size = new Size(56, 50);
@@ -98,7 +98,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.FromArgb(29, 41, 81);
-            ClientSize = new Size(448, 359);
+            ClientSize = new Size(449, 356);
             Controls.Add(button2);
             Controls.Add(label2);
             Controls.Add(button1);
@@ -109,7 +109,7 @@
             MaximizeBox = false;
             Name = "Form2";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "SHUTTY UTILITY v1.2.0 by vadii";
+            Text = "Shutty Utility v1.2.5 by vadii";
             ResumeLayout(false);
             PerformLayout();
 

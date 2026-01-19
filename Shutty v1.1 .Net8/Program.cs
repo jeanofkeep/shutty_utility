@@ -69,6 +69,8 @@ namespace utility
 
             int seconds = time * 60 + 5;
 
+            //int seconds = time * 60;
+
             process.StartInfo.FileName = "shutdown.exe";
             process.StartInfo.Arguments = $"/s /t {seconds}";
             process.StartInfo.UseShellExecute = false;
@@ -83,6 +85,8 @@ namespace utility
             var process = new Process();
 
             int seconds = time * 60 + 3;
+
+            //int seconds = time * 60;
 
             process.StartInfo.FileName = "shutdown.exe";
             process.StartInfo.Arguments = $"/r /t {seconds}";
