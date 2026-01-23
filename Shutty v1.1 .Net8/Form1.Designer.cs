@@ -43,6 +43,8 @@ namespace utility
             label2 = new Label();
             toolTip1 = new ToolTip(components);
             listBox1 = new ListBox();
+            label3 = new Label();
+            timer2 = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)fileSystemWatcher1).BeginInit();
             SuspendLayout();
@@ -51,7 +53,7 @@ namespace utility
             // 
             numericUpDown1.Font = new Font("Lucida Console", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
             numericUpDown1.ForeColor = SystemColors.InfoText;
-            numericUpDown1.Location = new Point(18, 50);
+            numericUpDown1.Location = new Point(18, 44);
             numericUpDown1.Margin = new Padding(10);
             numericUpDown1.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
             numericUpDown1.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
@@ -66,7 +68,7 @@ namespace utility
             label1.AutoSize = true;
             label1.Font = new Font("Lucida Console", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
             label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(-4, 7);
+            label1.Location = new Point(-4, 6);
             label1.Margin = new Padding(10);
             label1.Name = "label1";
             label1.Padding = new Padding(6);
@@ -85,7 +87,7 @@ namespace utility
             button5.Font = new Font("Arial Rounded MT Bold", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button5.ForeColor = Color.White;
             button5.Image = shutty_utility.Properties.Resources.info_button;
-            button5.Location = new Point(284, 93);
+            button5.Location = new Point(283, 78);
             button5.Margin = new Padding(10);
             button5.Name = "button5";
             button5.Size = new Size(56, 50);
@@ -100,7 +102,7 @@ namespace utility
             button4.Font = new Font("Arial Rounded MT Bold", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button4.ForeColor = Color.White;
             button4.Image = shutty_utility.Properties.Resources.exit_button;
-            button4.Location = new Point(370, 93);
+            button4.Location = new Point(369, 78);
             button4.Margin = new Padding(10);
             button4.Name = "button4";
             button4.Size = new Size(56, 50);
@@ -115,7 +117,7 @@ namespace utility
             button3.Font = new Font("Arial Rounded MT Bold", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button3.ForeColor = Color.White;
             button3.Image = shutty_utility.Properties.Resources.restart_button;
-            button3.Location = new Point(111, 93);
+            button3.Location = new Point(110, 78);
             button3.Margin = new Padding(10);
             button3.Name = "button3";
             button3.Size = new Size(56, 50);
@@ -130,7 +132,7 @@ namespace utility
             button2.Font = new Font("Arial Rounded MT Bold", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button2.ForeColor = Color.White;
             button2.Image = shutty_utility.Properties.Resources.undo_button;
-            button2.Location = new Point(197, 93);
+            button2.Location = new Point(196, 78);
             button2.Margin = new Padding(10);
             button2.Name = "button2";
             button2.Size = new Size(56, 50);
@@ -144,7 +146,7 @@ namespace utility
             button1.Font = new Font("Arial Rounded MT Bold", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0, true);
             button1.ForeColor = Color.White;
             button1.Image = shutty_utility.Properties.Resources.shutdown_button;
-            button1.Location = new Point(25, 93);
+            button1.Location = new Point(24, 78);
             button1.Margin = new Padding(10);
             button1.Name = "button1";
             button1.Size = new Size(56, 50);
@@ -157,7 +159,7 @@ namespace utility
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Lucida Console", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label2.Location = new Point(76, 330);
+            label2.Location = new Point(78, 326);
             label2.Margin = new Padding(9);
             label2.Name = "label2";
             label2.Size = new Size(287, 13);
@@ -173,12 +175,23 @@ namespace utility
             listBox1.ForeColor = Color.FromArgb(62, 174, 92);
             listBox1.FormattingEnabled = true;
             listBox1.ItemHeight = 13;
-            listBox1.Location = new Point(16, 167);
+            listBox1.Location = new Point(18, 145);
             listBox1.Margin = new Padding(6);
             listBox1.Name = "listBox1";
             listBox1.Size = new Size(412, 143);
             listBox1.TabIndex = 0;
             listBox1.TabStop = false;
+            // 
+            // label3
+            // 
+            label3.BackColor = Color.FromArgb(12, 16, 32);
+            label3.Font = new Font("Lucida Console", 9F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            label3.ForeColor = Color.FromArgb(62, 174, 92);
+            label3.Location = new Point(18, 288);
+            label3.Name = "label3";
+            label3.Size = new Size(412, 23);
+            label3.TabIndex = 8;
+            label3.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // Form1
             // 
@@ -186,7 +199,8 @@ namespace utility
             AutoScaleMode = AutoScaleMode.Font;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.FromArgb(29, 41, 81);
-            ClientSize = new Size(448, 359);
+            ClientSize = new Size(449, 356);
+            Controls.Add(label3);
             Controls.Add(listBox1);
             Controls.Add(label2);
             Controls.Add(button5);
@@ -203,8 +217,8 @@ namespace utility
             MaximizeBox = false;
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "SHUTTY UTILITY v1.2.0 by vadii";
-            Load += Form1_Load;
+            Text = "Shutty Utility v1.2.5 by vadii";
+
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             ((System.ComponentModel.ISupportInitialize)fileSystemWatcher1).EndInit();
             ResumeLayout(false);
@@ -225,6 +239,8 @@ namespace utility
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.ListBox listBox1;
+        private Label label3;
+        private System.Windows.Forms.Timer timer2;
     }
 }
 
