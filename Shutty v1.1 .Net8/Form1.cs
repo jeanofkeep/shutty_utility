@@ -46,7 +46,6 @@ namespace utility
         public void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
             Program.time = (int)numericUpDown1.Value;
-            
             timer = Program.time * 60;
         }
 
@@ -54,17 +53,15 @@ namespace utility
         private void button1_Click(object sender, EventArgs e)
         {
             Program.ShutDownPc();
-
             UpdateHistory();
 
             remining = timer;
-
             timer2.Start();
-            //MessageBox.Show("Start");
 
         }
 
         //restart button
+
         private void button3_Click(object sender, EventArgs e)
         {
             Program.RestartPc();
@@ -79,8 +76,8 @@ namespace utility
         {
             Application.Exit();
         }
-
         //form2
+
         private void button5_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -96,7 +93,6 @@ namespace utility
             UpdateHistory();
 
             TimerReset();
-
         }
 
         //logic timer2
@@ -106,8 +102,6 @@ namespace utility
             {
                 elapsed = timer - remining;
                 string time_print = TimeSpan.FromSeconds(remining).ToString(@"mm\:ss");
-                int percent = (elapsed * 100) / timer;
-                //string percent_bar = PercentBar(percent);
 
                 label3.Text = time_print + "|" + CreateProgressBar(elapsed, timer);
                 remining--;
@@ -116,9 +110,7 @@ namespace utility
             else
             {
                 timer2.Stop();
-                //percent = 100;
             }
-
         }
 
         //progress bar
@@ -136,10 +128,6 @@ namespace utility
 
             }
             bar.Append("]");
-            //bar.Append(i < filled ? "█" : "░");
-            //bar.Append("░");
-            //bar.Append("█");
-            //bar.Append("▌");
            
             return bar.ToString();
 

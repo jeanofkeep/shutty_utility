@@ -61,15 +61,11 @@ namespace utility
             }
         }
 
-
-        public static void ShutDownPc()
+        public static async void ShutDownPc()
         {
-
             var process = new Process();
 
-            int seconds = time * 60 + 5;
-
-            //int seconds = time * 60;
+            int seconds = time * 60;
 
             process.StartInfo.FileName = "shutdown.exe";
             process.StartInfo.Arguments = $"/s /t {seconds}";
@@ -77,6 +73,7 @@ namespace utility
             process.StartInfo.CreateNoWindow = true;
             process.Start();
 
+            await Task.Delay(5000);
             Logger.Add($"PC shutdown in {Program.time} min!");
         }
 
@@ -84,9 +81,7 @@ namespace utility
         {
             var process = new Process();
 
-            int seconds = time * 60 + 3;
-
-            //int seconds = time * 60;
+            int seconds = time * 60;
 
             process.StartInfo.FileName = "shutdown.exe";
             process.StartInfo.Arguments = $"/r /t {seconds}";
@@ -95,7 +90,6 @@ namespace utility
             process.Start();
 
             Logger.Add($"PC restart in {Program.time} min!");
-
         }
         
 
@@ -125,7 +119,6 @@ namespace utility
                 MessageBox.Show("Error undo");
             }
         }
-
 
     }
 }

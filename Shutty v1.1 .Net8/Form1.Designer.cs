@@ -218,6 +218,7 @@ namespace utility
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Shutty Utility v1.2.5 by vadii";
+
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             ((System.ComponentModel.ISupportInitialize)fileSystemWatcher1).EndInit();
             ResumeLayout(false);
