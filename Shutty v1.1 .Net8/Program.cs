@@ -71,9 +71,7 @@ namespace utility
             process.StartInfo.Arguments = $"/s /t {seconds}";
             process.StartInfo.UseShellExecute = false;
             process.StartInfo.CreateNoWindow = true;
-            process.Start();
-
-            await Task.Delay(5000);
+            process.Start();;
             Logger.Add($"PC shutdown in {Program.time} min!");
         }
 

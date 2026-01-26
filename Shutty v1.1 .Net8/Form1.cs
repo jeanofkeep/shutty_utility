@@ -19,6 +19,8 @@ namespace utility
         int elapsed, remining;
 
         int timer = 1;
+
+        const int max_value_min = 1441;
         
         public Form1()
         {
@@ -42,7 +44,8 @@ namespace utility
             timer2.Stop();
             timer = Program.time * 60;
         }
-
+        
+       
         public void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
             Program.time = (int)numericUpDown1.Value;
@@ -50,25 +53,45 @@ namespace utility
         }
 
         //shutdown button
-        private void button1_Click(object sender, EventArgs e)
+        private async void button1_Click(object sender, EventArgs e)
         {
-            Program.ShutDownPc();
-            UpdateHistory();
+            if (Program.time >= max_value_min)
+            {
+                Logger.Add("Enter the correct time(max value 1440)!");
+                UpdateHistory();
+            }
 
-            remining = timer;
-            timer2.Start();
+            else 
+            {
+                Program.ShutDownPc();
+                UpdateHistory();
 
+                await Task.Delay(1200);
+
+                remining = timer;
+                timer2.Start();
+            }
         }
-
+        
         //restart button
-
-        private void button3_Click(object sender, EventArgs e)
+        private async void button3_Click(object sender, EventArgs e)
         {
-            Program.RestartPc();
+            if (Program.time >= max_value_min)
+            {
+                Logger.Add("Enter the correct time(max value 1440)!");
+                UpdateHistory();
+            }
 
-            UpdateHistory();
-            remining = timer;
-            timer2.Start();
+            else
+            {
+                Program.RestartPc();
+                UpdateHistory();
+
+                await Task.Delay(1200);
+
+                remining = timer;
+                timer2.Start();
+            }
         }
 
         //exit application button
@@ -76,8 +99,8 @@ namespace utility
         {
             Application.Exit();
         }
-        //form2
 
+        //form2
         private void button5_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -101,7 +124,8 @@ namespace utility
             if (remining > 0)
             {
                 elapsed = timer - remining;
-                string time_print = TimeSpan.FromSeconds(remining).ToString(@"mm\:ss");
+                //string time_print = TimeSpan.FromSeconds(remining).ToString(@"mm\:ss");
+                string time_print = TimeSpan.FromSeconds(remining).ToString(@"hh\:mm\:ss");
 
                 label3.Text = time_print + "|" + CreateProgressBar(elapsed, timer);
                 remining--;
@@ -116,7 +140,7 @@ namespace utility
         //progress bar
         private string CreateProgressBar(int cur, int total)
         {
-            const int width = 50;
+            const int width = 47;
 
             int filled = (cur * width) / total;
 
