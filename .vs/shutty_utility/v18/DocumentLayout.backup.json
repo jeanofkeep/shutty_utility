@@ -3,32 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Downloads\\shutty_utility_win-master\\shutty_utility_win-master\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AA8F4682-3A5C-41EB-83CA-28A642FBAE89}|shutty_utility.csproj|c:\\users\\user\\downloads\\shutty_utility_win-master\\shutty_utility_win-master\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA8F4682-3A5C-41EB-83CA-28A642FBAE89}|shutty_utility.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA8F4682-3A5C-41EB-83CA-28A642FBAE89}|shutty_utility.csproj|C:\\Users\\user\\Downloads\\shutty_utility_win-master\\shutty_utility_win-master\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AA8F4682-3A5C-41EB-83CA-28A642FBAE89}|shutty_utility.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA8F4682-3A5C-41EB-83CA-28A642FBAE89}|shutty_utility.csproj|c:\\users\\user\\downloads\\shutty_utility_win-master\\shutty_utility_win-master\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA8F4682-3A5C-41EB-83CA-28A642FBAE89}|shutty_utility.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AA8F4682-3A5C-41EB-83CA-28A642FBAE89}|shutty_utility.csproj|c:\\users\\user\\downloads\\shutty_utility_win-master\\shutty_utility_win-master\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{AA8F4682-3A5C-41EB-83CA-28A642FBAE89}|shutty_utility.csproj|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AA8F4682-3A5C-41EB-83CA-28A642FBAE89}|shutty_utility.csproj|C:\\Users\\user\\Downloads\\shutty_utility_win-master\\shutty_utility_win-master\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{AA8F4682-3A5C-41EB-83CA-28A642FBAE89}|shutty_utility.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA8F4682-3A5C-41EB-83CA-28A642FBAE89}|shutty_utility.csproj|C:\\Users\\user\\Downloads\\shutty_utility_win-master\\shutty_utility_win-master\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AA8F4682-3A5C-41EB-83CA-28A642FBAE89}|shutty_utility.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{AA8F4682-3A5C-41EB-83CA-28A642FBAE89}|shutty_utility.csproj|c:\\users\\user\\downloads\\shutty_utility_win-master\\shutty_utility_win-master\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA8F4682-3A5C-41EB-83CA-28A642FBAE89}|shutty_utility.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA8F4682-3A5C-41EB-83CA-28A642FBAE89}|shutty_utility.csproj|c:\\users\\user\\downloads\\shutty_utility_win-master\\shutty_utility_win-master\\form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA8F4682-3A5C-41EB-83CA-28A642FBAE89}|shutty_utility.csproj|solutionrelative:form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA8F4682-3A5C-41EB-83CA-28A642FBAE89}|shutty_utility.csproj|C:\\Users\\user\\Downloads\\shutty_utility_win-master\\shutty_utility_win-master\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AA8F4682-3A5C-41EB-83CA-28A642FBAE89}|shutty_utility.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA8F4682-3A5C-41EB-83CA-28A642FBAE89}|shutty_utility.csproj|c:\\users\\user\\downloads\\shutty_utility_win-master\\shutty_utility_win-master\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA8F4682-3A5C-41EB-83CA-28A642FBAE89}|shutty_utility.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA8F4682-3A5C-41EB-83CA-28A642FBAE89}|shutty_utility.csproj|c:\\users\\user\\downloads\\shutty_utility_win-master\\shutty_utility_win-master\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA8F4682-3A5C-41EB-83CA-28A642FBAE89}|shutty_utility.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AA8F4682-3A5C-41EB-83CA-28A642FBAE89}|shutty_utility.csproj|c:\\users\\user\\downloads\\shutty_utility_win-master\\shutty_utility_win-master\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA8F4682-3A5C-41EB-83CA-28A642FBAE89}|shutty_utility.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA8F4682-3A5C-41EB-83CA-28A642FBAE89}|shutty_utility.csproj|c:\\users\\user\\downloads\\shutty_utility_win-master\\shutty_utility_win-master\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA8F4682-3A5C-41EB-83CA-28A642FBAE89}|shutty_utility.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AA8F4682-3A5C-41EB-83CA-28A642FBAE89}|shutty_utility.csproj|C:\\Users\\user\\Downloads\\shutty_utility_win-master\\shutty_utility_win-master\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AA8F4682-3A5C-41EB-83CA-28A642FBAE89}|shutty_utility.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA8F4682-3A5C-41EB-83CA-28A642FBAE89}|shutty_utility.csproj|c:\\users\\user\\downloads\\shutty_utility_win-master\\shutty_utility_win-master\\baseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA8F4682-3A5C-41EB-83CA-28A642FBAE89}|shutty_utility.csproj|solutionrelative:baseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA8F4682-3A5C-41EB-83CA-28A642FBAE89}|shutty_utility.csproj|c:\\users\\user\\downloads\\shutty_utility_win-master\\shutty_utility_win-master\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA8F4682-3A5C-41EB-83CA-28A642FBAE89}|shutty_utility.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,66 +54,67 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\user\\Downloads\\shutty_utility_win-master\\shutty_utility_win-master\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "C:\\Users\\user\\Downloads\\shutty_utility_win-master\\shutty_utility_win-master\\.gitignore*",
+              "RelativeToolTip": ".gitignore*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVDhPjVNLTgJBEG1lwpoFB3GNK9fieA48hD8iwT/ihwgSDAIHgAGXXsEV18CNzL/LquqZdsYM6kteXqcy3fWqpmpNRBgOhyABBEgpAFVKPIMUcYzUyOU\u002BXM/b2qtU3vkSfRjjZTCAMAw1A2LwzdFoBPP5HNqdzuL27n4juibWI\u002BUshBA1DIkhEx9iEorFotgslQqGYbxxAGFEqt1MxmPWJLbLZdZ\u002Bv89q5PMFPiTR6z2zdaxR0fXA0XTBcVywkb4fwHXjRteecIDNQ7UmExVYAdPcxYaqclN46na5WenMKjtlVnTYwcXlVYaDqImW9beD5N/TeGy32QHXm6hZ03ZgiSQHp2fnWQ4oBmJqWSqwAqZpZjt4aLXAD4J0VqyZsmoubfB8H2r1eoaD6NXZ9HcHO\u002BSA3f4AjifXl8rItOETM8ckB9WTWpYD9RdeZ1PWVWAHWXPQaDb59f/w8LiqHeh1pvGkCaP6qB8yXusoxmuNZ7XmII4O9vGuEF86osuDYRkpYQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2026-04-20T19:04:11.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form2.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Downloads\\shutty_utility_win-master\\shutty_utility_win-master\\Form2.Designer.cs",
+              "RelativeDocumentMoniker": "Form2.Designer.cs",
+              "ToolTip": "C:\\Users\\user\\Downloads\\shutty_utility_win-master\\shutty_utility_win-master\\Form2.Designer.cs",
+              "RelativeToolTip": "Form2.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T18:41:35.157Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Downloads\\shutty_utility_win-master\\shutty_utility_win-master\\Form1.Designer.cs",
-              "RelativeDocumentMoniker": "Form1.Designer.cs",
-              "ToolTip": "C:\\Users\\user\\Downloads\\shutty_utility_win-master\\shutty_utility_win-master\\Form1.Designer.cs",
-              "RelativeToolTip": "Form1.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAASAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Downloads\\shutty_utility_win-master\\shutty_utility_win-master\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\user\\Downloads\\shutty_utility_win-master\\shutty_utility_win-master\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAhwFUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-15T20:24:27.718Z",
+              "WhenOpened": "2026-04-19T22:55:31.639Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Form3.cs",
               "DocumentMoniker": "C:\\Users\\user\\Downloads\\shutty_utility_win-master\\shutty_utility_win-master\\Form3.cs",
               "RelativeDocumentMoniker": "Form3.cs",
               "ToolTip": "C:\\Users\\user\\Downloads\\shutty_utility_win-master\\shutty_utility_win-master\\Form3.cs",
               "RelativeToolTip": "Form3.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBAAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-14T21:29:49.628Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Form3.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\user\\Downloads\\shutty_utility_win-master\\shutty_utility_win-master\\Form3.cs",
-              "RelativeDocumentMoniker": "Form3.cs",
-              "ToolTip": "C:\\Users\\user\\Downloads\\shutty_utility_win-master\\shutty_utility_win-master\\Form3.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "Form3.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T21:29:37.116Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Form2.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Downloads\\shutty_utility_win-master\\shutty_utility_win-master\\Form2.cs",
-              "RelativeDocumentMoniker": "Form2.cs",
-              "ToolTip": "C:\\Users\\user\\Downloads\\shutty_utility_win-master\\shutty_utility_win-master\\Form2.cs",
-              "RelativeToolTip": "Form2.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAADgvwwAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T21:28:06.494Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Form2.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\user\\Downloads\\shutty_utility_win-master\\shutty_utility_win-master\\Form2.cs",
               "RelativeDocumentMoniker": "Form2.cs",
@@ -109,7 +126,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Downloads\\shutty_utility_win-master\\shutty_utility_win-master\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\user\\Downloads\\shutty_utility_win-master\\shutty_utility_win-master\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T21:47:27.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\user\\Downloads\\shutty_utility_win-master\\shutty_utility_win-master\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -121,16 +151,51 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Downloads\\shutty_utility_win-master\\shutty_utility_win-master\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\user\\Downloads\\shutty_utility_win-master\\shutty_utility_win-master\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAFsAAAAAAAAAAAAowGYAAAAOAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Downloads\\shutty_utility_win-master\\shutty_utility_win-master\\Form2.cs",
+              "RelativeDocumentMoniker": "Form2.cs",
+              "ToolTip": "C:\\Users\\user\\Downloads\\shutty_utility_win-master\\shutty_utility_win-master\\Form2.cs",
+              "RelativeToolTip": "Form2.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAlwA0AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-11T21:08:17.041Z",
+              "WhenOpened": "2026-03-14T21:28:06.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Form3.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\user\\Downloads\\shutty_utility_win-master\\shutty_utility_win-master\\Form3.cs",
+              "RelativeDocumentMoniker": "Form3.cs",
+              "ToolTip": "C:\\Users\\user\\Downloads\\shutty_utility_win-master\\shutty_utility_win-master\\Form3.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Form3.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T21:29:37.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Downloads\\shutty_utility_win-master\\shutty_utility_win-master\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\user\\Downloads\\shutty_utility_win-master\\shutty_utility_win-master\\Form1.Designer.cs",
+              "RelativeToolTip": "Form1.Designer.cs",
+              "ViewState": "AgIAANUAAAAAAAAAAAD4v8oAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T20:24:27.718Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BaseForm.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Downloads\\shutty_utility_win-master\\shutty_utility_win-master\\BaseForm.cs",
+              "RelativeDocumentMoniker": "BaseForm.cs",
+              "ToolTip": "C:\\Users\\user\\Downloads\\shutty_utility_win-master\\shutty_utility_win-master\\BaseForm.cs",
+              "RelativeToolTip": "BaseForm.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T22:27:30.997Z"
             }
           ]
         }

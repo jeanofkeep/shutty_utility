@@ -60,33 +60,33 @@ namespace utility
                 }
             }
         }
-        public static async void ShutDownPc()
+        public static async Task ShutDownPc()
         {
             using var process = new Process();
-
             int seconds = time * 60;
 
             process.StartInfo.FileName = "shutdown.exe";
             process.StartInfo.Arguments = $"/s /t {seconds}";
             process.StartInfo.UseShellExecute = false;
             process.StartInfo.CreateNoWindow = true;
-            process.Start();;
-            Logger.Add($"PC shutdown in {Program.time} min!");
-        }
 
-        public static void RestartPc()
+            Logger.Add($"PC shutdown in {Program.time} min!");
+            await Task.Delay(3000);
+            process.Start();
+        }
+        public static async Task RestartPc()
         {
             var process = new Process();
-
             int seconds = time * 60;
 
             process.StartInfo.FileName = "shutdown.exe";
             process.StartInfo.Arguments = $"/r /t {seconds}";
             process.StartInfo.UseShellExecute = false;
             process.StartInfo.CreateNoWindow = true;
-            process.Start();
 
             Logger.Add($"PC restart in {Program.time} min!");
+            await Task.Delay(3000);
+            process.Start();
         }
         public static void Undo()
         {

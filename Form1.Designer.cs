@@ -36,7 +36,6 @@ namespace utility
             label1 = new Label();
             fileSystemWatcher1 = new FileSystemWatcher();
             button5 = new Button();
-            button4 = new Button();
             button3 = new Button();
             button2 = new Button();
             button1 = new Button();
@@ -45,6 +44,7 @@ namespace utility
             listBox1 = new ListBox();
             label3 = new Label();
             timer2 = new System.Windows.Forms.Timer(components);
+            button4 = new Button();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)fileSystemWatcher1).BeginInit();
             SuspendLayout();
@@ -95,21 +95,6 @@ namespace utility
             toolTip1.SetToolTip(button5, "Info");
             button5.UseVisualStyleBackColor = false;
             button5.Click += button5_Click;
-            // 
-            // button4
-            // 
-            button4.BackColor = Color.FromArgb(132, 55, 16);
-            button4.Font = new Font("Arial Rounded MT Bold", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button4.ForeColor = Color.White;
-            button4.Image = shutty_utility.Properties.Resources.exit_button;
-            button4.Location = new Point(369, 78);
-            button4.Margin = new Padding(10);
-            button4.Name = "button4";
-            button4.Size = new Size(56, 50);
-            button4.TabIndex = 6;
-            toolTip1.SetToolTip(button4, "Exit");
-            button4.UseVisualStyleBackColor = false;
-            button4.Click += button4_Click;
             // 
             // button3
             // 
@@ -193,6 +178,21 @@ namespace utility
             label3.TabIndex = 8;
             label3.TextAlign = ContentAlignment.MiddleLeft;
             // 
+            // button4
+            // 
+            button4.BackColor = Color.FromArgb(132, 55, 16);
+            button4.Font = new Font("Arial Rounded MT Bold", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button4.ForeColor = Color.White;
+            button4.Image = shutty_utility.Properties.Resources.exit_button;
+            button4.Location = new Point(369, 78);
+            button4.Margin = new Padding(10);
+            button4.Name = "button4";
+            button4.Size = new Size(56, 50);
+            button4.TabIndex = 6;
+            toolTip1.SetToolTip(button4, "Exit");
+            button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -217,7 +217,7 @@ namespace utility
             MaximizeBox = false;
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Shutty Utility v1.3.5 by vadii";
+            Text = "Shutty Utility v1.4.0 by vadii";
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             ((System.ComponentModel.ISupportInitialize)fileSystemWatcher1).EndInit();
             ResumeLayout(false);
@@ -232,14 +232,14 @@ namespace utility
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.IO.FileSystemWatcher fileSystemWatcher1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.ListBox listBox1;
         private Label label3;
-        private System.Windows.Forms.Timer timer2;
+        public System.Windows.Forms.Timer timer2;
+        private Button button4;
     }
 }
 

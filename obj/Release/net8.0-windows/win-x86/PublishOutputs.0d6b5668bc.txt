@@ -1,0 +1,7 @@
+C:\Users\user\Desktop\shutty\shutty 1.4\shutty_utility.pdb
+C:\Users\user\Desktop\shutty\shutty 1.4\D3DCompiler_47_cor3.dll
+C:\Users\user\Desktop\shutty\shutty 1.4\PenImc_cor3.dll
+C:\Users\user\Desktop\shutty\shutty 1.4\PresentationNative_cor3.dll
+C:\Users\user\Desktop\shutty\shutty 1.4\vcruntime140_cor3.dll
+C:\Users\user\Desktop\shutty\shutty 1.4\wpfgfx_cor3.dll
+C:\Users\user\Desktop\shutty\shutty 1.4\shutty_utility.exe

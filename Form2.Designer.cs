@@ -109,7 +109,7 @@
             MaximizeBox = false;
             Name = "Form2";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Shutty Utility v1.3.5 by vadii";
+            Text = "Shutty Utility v1.4.0 by vadii";
             ResumeLayout(false);
             PerformLayout();
 

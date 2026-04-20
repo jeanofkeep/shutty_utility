@@ -1,4 +1,5 @@
-﻿using System;
+﻿using shutty_utility;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -11,7 +12,8 @@ using static utility.Program;
 
 namespace utility
 {
-    public partial class Form1 : Form
+    //public partial class Form1 : BaseForm { }
+    public partial class Form1 : BaseForm
     {
         int elapsed, remaining;
         int total_seconds = 1;
@@ -57,10 +59,8 @@ namespace utility
             }
             else 
             {
-                Program.ShutDownPc();
+                await Program.ShutDownPc();
                 UpdateHistory();
-
-                await Task.Delay(1200);
 
                 remaining = total_seconds;
                 timer2.Start();
@@ -84,8 +84,6 @@ namespace utility
                 Program.RestartPc();
                 UpdateHistory();
 
-                await Task.Delay(1200);
-
                 remaining = total_seconds;
                 timer2.Start();
             }
@@ -100,8 +98,9 @@ namespace utility
         //form2
         private void button5_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Form2 info = new Form2(this);
-            info.ShowDialog();
+            info.Show();
         }
 
         //undo button
@@ -113,7 +112,7 @@ namespace utility
         }
 
         //logic timer2
-        private void timer2_Tick(object sender, EventArgs e)
+        public void timer2_Tick(object sender, EventArgs e)
         {
             if (remaining > 0)
             {
@@ -133,9 +132,7 @@ namespace utility
         private string CreateProgressBar(int cur, int total)
         {
             const int width = 47;
-
             int filled = (cur * width) / total;
-
             StringBuilder bar = new StringBuilder("[");
             
             for (int i = 0; i < width; i++)

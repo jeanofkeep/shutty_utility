@@ -120,7 +120,7 @@
   <data name="label2.Text" xml:space="preserve">
     <value>┌───────────────────────────────┐
 │       Shutty Utility          │
-│         Version 1.3.5         │
+│         Version 1.4.0         │
 │                               │
 │   Simple shutdown timer app   │
 │       for Windows systems     │
@@ -128,9 +128,6 @@
 │       © 2026  by vadii        │
 └───────────────────────────────┘</value>
   </data>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>

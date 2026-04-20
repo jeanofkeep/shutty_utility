@@ -4,6 +4,9 @@
     <_LastSelectedProfileId>C:\Users\user\Downloads\shutty_utility_win-master\shutty_utility_win-master\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Update="BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

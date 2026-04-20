@@ -1,4 +1,5 @@
-﻿using System;
+﻿using shutty_utility;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,22 +8,20 @@ using System.Windows.Forms;
 
 namespace utility
 {
-    public partial class Form3 : Form
+    public partial class Form3 : BaseForm
     {
-        private readonly Form1 _owner;
-        public Form3(Form1 owner)
+        private readonly Form2 _owner;
+        public Form3(Form2 owner)
         {
             InitializeComponent();
             _owner = owner;
-            this.ShowInTaskbar = false;
+            this.ShowInTaskbar = true;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form2 info = new Form2(_owner);
-            info.ShowDialog();
-            this.Close();
+            _owner.Show();
         }
 
         //copy buttons
